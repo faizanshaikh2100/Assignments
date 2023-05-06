@@ -1,3 +1,5 @@
+package ExtraAssignments.ProductCsvAssignment;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -35,7 +37,7 @@ public class Product {
         return rating;
     }
     public String getData(){
-        return "Product --> Name: "+this.name+" price: "+this.price+" category: "+this.category+" rating: "+this.rating;
+        return "Product1 --> Name: "+this.name+" price: "+this.price+" category: "+this.category+" rating: "+this.rating;
     }
 
     public static void main(String[] args) throws FileNotFoundException {
@@ -44,7 +46,7 @@ public class Product {
         List<Product> productList = new ArrayList<>();
 
         try{
-            FileReader fr  =new FileReader("C:\\Users\\Faizan\\Downloads\\Assigment2\\src\\products.csv");//yaha tumhre products.csv ka location
+            FileReader fr  =new FileReader("C:\\Users\\Faizan\\Downloads\\Assigment\\src\\products.csv");//yaha tumhre productsInfo.csv ka location
             br  = new BufferedReader(fr);
 
             String i;
