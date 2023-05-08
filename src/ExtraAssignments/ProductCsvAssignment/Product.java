@@ -53,10 +53,6 @@ public class Product {
             while((i= br.readLine())!=null){
                 String[] productInfo = i.split(",");
 
-                //split krne pe array ke index p accordingly elements honge like
-//                splitting Watch,4000,wearables,4.5 will result into an array as
-//                        ["Watch","4000","warbles","4.5"]
-//                System.out.println(productInfo.length);
                 String name  = productInfo[0];
                 int price = Integer.parseInt(productInfo[1]);
                 String category  = productInfo[2];
