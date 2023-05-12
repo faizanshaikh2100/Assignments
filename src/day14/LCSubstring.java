@@ -1,5 +1,4 @@
 package day14;
-package DP;
 
 
 public class LCSubstring {
@@ -30,6 +29,6 @@ public class LCSubstring {
         String s1 = "ABCD";
         String s2 = "ACEF";
         int lcs = findLCS(s1, s2);
-        System.out.println("Length of LCS is " + lcs);
+        System.out.println( lcs);
     }
 }

@@ -1,5 +1,5 @@
 package day14;
-package dataStructures.trees;
+
 
 import java.util.*;
 
@@ -14,7 +14,7 @@ class TreeNodeOne {
 }
 
 public class BinaryTreeTopView {
-    public static void printTopView(TreeNodeOne root) {
+    public static void TopView(TreeNodeOne root) {
         if (root == null)
             return;
 
@@ -51,8 +51,7 @@ public class BinaryTreeTopView {
         root.right.right = new TreeNodeOne(5);
         root.left.right.right = new TreeNodeOne(6);
 
-        System.out.println("Top view of the binary tree:");
-        printTopView(root);
+        TopView(root);
     }
 }
 

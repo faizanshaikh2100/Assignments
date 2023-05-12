@@ -1,2 +1,5 @@
-package day14;public class Queues {
+package day14;
+
+public class Queues {
+
 }
