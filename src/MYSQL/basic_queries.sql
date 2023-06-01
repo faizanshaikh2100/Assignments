@@ -15,7 +15,7 @@ CREATE TABLE students(
 );
 -- inserting values into the table
 INSERT INTO students value(1,
-	"Praveen",
+	"faizan",
 	"8610571051",
 	90.6);
     INSERT INTO students value(2,

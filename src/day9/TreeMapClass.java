@@ -11,7 +11,7 @@ public class TreeMapClass {
         treeMap.put(6000,"Filza");
         treeMap.put(5000,"Faizan");
         treeMap.put(3000,"Sneha");
-        treeMap.put(4000,"praveen");
+        treeMap.put(4000,"faizan");
         System.out.println(treeMap);
 
         treeMap.forEach((k,v)-> System.out.println("Key :"+k+" Value: "+v));

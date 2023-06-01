@@ -14,7 +14,7 @@
 		
 	<context:annotation-config />
 	<bean id="employee" class="com.wiley.springcore.misc.Employee">
-		<constructor-arg value="Faizan"></constructor-arg>
+		<constructor-arg value="faizan"></constructor-arg>
 	</bean>
 	
 	<bean id="address" class="com.wiley.springcore.misc.Address">
@@ -28,7 +28,7 @@
 		factory-bean="s"
 	></bean>-->
 	<bean
-		id="Faizan"
+		id="faizan"
 		class="com.wiley.springcore.misc.SingletonA"
 		factory-method="getSingletonA"
 	></bean>

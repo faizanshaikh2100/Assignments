@@ -152,7 +152,7 @@ CREATE TABLE IF NOT EXISTS contacts(
     full_name VARCHAR(100) GENERATED ALWAYS AS (CONCAT(first_name,' ',last_name))
 );
 
-INSERT INTO contacts(first_name, last_name) VALUES ("Praveen","Rao"),("Anon","ymous");
+INSERT INTO contacts(first_name, last_name) VALUES ("faizan","Rao"),("Anon","ymous");
 SELECT * FROM contacts;
 
 use wileyclassic;

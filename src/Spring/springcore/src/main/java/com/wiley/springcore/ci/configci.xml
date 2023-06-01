@@ -13,7 +13,7 @@
 	</bean>
 	<bean class="com.wiley.springcore.ci.Person" name="p1">
 		<constructor-arg value="99" />
-		<constructor-arg value="Faizan" />
+		<constructor-arg value="faizan" />
 		<constructor-arg ref="c1" />
 	</bean>
 </beans>

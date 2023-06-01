@@ -21,7 +21,7 @@
 		class="com.wiley.springcore.Student"
 		name="wileystudent2"
 		p:studentId="1921"
-		p:studentName="Faizan"
+		p:studentName="faizan"
 		p:studentAddress="Chennai"
 	>
 	</bean>
@@ -55,7 +55,7 @@
 		<property name="address" value="Chennai"></property>
 	</bean>
 	<bean class="com.wiley.springcore.Student" name="wileystudent2"
-		p:studentId="1" p:studentName="Faizan" >
+		p:studentId="1" p:studentName="faizan" >
 		<property name="phones">
 			<list>
 				<value>6201208343</value>

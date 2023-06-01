@@ -9,7 +9,7 @@ public class MiscMain {
 		Employee emp = context.getBean("employee", Employee.class);
 		System.out.println(emp);	
 		
-		SingletonA si = context.getBean("Faizan", SingletonA.class);
+		SingletonA si = context.getBean("faizan", SingletonA.class);
 		si.sayHello();
 	}
 }
