@@ -1,6 +1,5 @@
 package com.example.SpringPractice.model;
 
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -9,16 +8,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 @Entity
-public class Department {
+public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long departmentId;
-
-    private String departmentName;
-    private String departmentAddress;
-    private String departmentCode;
+    private Long bookId;
+    private Long authorId;
+    private String bookName;
 }

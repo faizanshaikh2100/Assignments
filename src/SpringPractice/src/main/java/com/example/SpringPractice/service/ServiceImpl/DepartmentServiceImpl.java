@@ -1,12 +1,14 @@
-package com.example.SpringPractice.service;
+package com.example.SpringPractice.service.ServiceImpl;
 
-import com.example.SpringPractice.exception.DepartmentNotFoundException;
+import com.example.SpringPractice.exception.DepNOTFoundException;
 import com.example.SpringPractice.model.Department;
 import com.example.SpringPractice.repository.DepartmentRepo;
+import com.example.SpringPractice.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class DepartmentServiceImpl implements DepartmentService {
@@ -28,11 +30,12 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public Department getDepartmentById(Long departmentId) throws DepartmentNotFoundException {
-        if(!depRepo.findById(departmentId).isPresent()){
-            throw new DepartmentNotFoundException("Department not found: " + departmentId + "");
+    public Department getDepartmentById(Long departmentId) throws DepNOTFoundException {
+        Optional<Department> dep =depRepo.findById(departmentId);
+        if(!dep.isPresent()){
+            throw new DepNOTFoundException("Wiley Department Not Available with Id you are searching for");
         }
-        return depRepo.findById(departmentId).get();
+        return dep.get();
     }
 
     @Override
