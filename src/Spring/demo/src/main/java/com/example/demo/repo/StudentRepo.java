@@ -9,6 +9,6 @@ import java.util.List;
 @Repository
 public interface StudentRepo extends JpaRepository<Student, Long> {
 
-    public List<Student> findByName(String name);
+    public Student findByName(String name);
 
 }

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Set;
 
 @RestController
 @RequestMapping(value="/api/student/course" ,consumes="application/json")
@@ -20,8 +21,13 @@ public class StudentController {
     private CourseRepo courseRepo;
 
     @PostMapping("/createStudent")
-    public Student createStudent(@RequestBody Student student) {
-        return studentRepo.save(student);
+    public String createStudent(@RequestBody Student student) {
+        Set<Course> courses =  student.getCourses();
+        studentRepo.save(student);
+         for(Course c : courses){
+             courseRepo.save(c);
+         }
+        return "Successfully added student";
     }
 
     @GetMapping("/students")
@@ -35,7 +41,7 @@ public class StudentController {
     }
 
     @GetMapping("/findByName/{name}")
-    public List<Student> findStudentsByName(@PathVariable String name) {
+    public Student findStudentsByName(@PathVariable String name) {
         return studentRepo.findByName(name);
     }
 
