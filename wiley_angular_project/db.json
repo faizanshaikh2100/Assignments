@@ -1,0 +1,62 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Form validation",
+      "day": "June 11th at 1.30pm",
+      "remider": true,
+      "reminder": false
+    },
+    {
+      "id": 2,
+      "text": "Spring app",
+      "day": "June 12th at 11.30am",
+      "remider": true,
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Angular App",
+      "day": "June 13th at 1.30pm",
+      "remider": false
+    },
+    {
+      "id": 4,
+      "text": "Cloud",
+      "day": "June 19th at 5.30pm",
+      "remider": true,
+      "reminder": false
+    },
+    {
+      "id": 5,
+      "text": "fullstack",
+      "day": "June 18th at 6.30pm",
+      "remider": false,
+      "reminder": true
+    },
+    {
+      "text": "wadwa",
+      "day": "2023-06-12T12:51",
+      "reminder": true,
+      "id": 6
+    },
+    {
+      "text": "wd",
+      "day": "2023-06-16T12:49",
+      "reminder": false,
+      "id": 7
+    },
+    {
+      "text": "dwad",
+      "day": "2023-06-18T12:50",
+      "reminder": true,
+      "id": 8
+    },
+    {
+      "text": "dwadad",
+      "day": "2023-06-12T15:52",
+      "reminder": true,
+      "id": 9
+    }
+  ]
+}
